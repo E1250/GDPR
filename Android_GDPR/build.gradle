@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // need this too
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+// to add kotlin  ######
+repositories {
+    mavenCentral()
+}
+// ################
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
